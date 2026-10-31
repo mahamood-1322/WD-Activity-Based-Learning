@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave & Co. | Food Ordering</title>
+    <link rel="stylesheet" href="web1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">Crave<span>&Co.</span></a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#offers">Special Offers</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#menu" class="nav-order">Order Now ↗</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">✦ FRESH FOOD, HAPPY MOOD</span>
+
+                <h1>Good food.<br>
+                    <span>Great mood.</span><br>
+                    Delivered.
+                </h1>
+
+                <p>
+                    Discover delicious flavours, freshly prepared meals,
+                    and irresistible treats delivered straight to your door.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu ↗</a>
+                    <a href="#offers" class="btn btn-outline">View Offers</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>4.9/5 ★</strong>
+                        <small>Customer Rating</small>
+                    </div>
+                    <div>
+                        <strong>30 min</strong>
+                        <small>Fast Delivery</small>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <small>Fresh Flavours</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="food-circle"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+                    alt="Juicy gourmet burger with fresh ingredients"
+                >
+                <div class="floating-card">
+                    <span class="floating-icon">🔥</span>
+                    <div>
+                        <strong>Chef's Special</strong>
+                        <small>Made with love</small>
+                    </div>
+                </div>
+                <div class="price-tag">Starting at ₹149</div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits">
+            <div class="benefit">
+                <span>🥗</span>
+                <div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Quality in every bite</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span>🚀</span>
+                <div>
+                    <h3>Quick Delivery</h3>
+                    <p>Hot food, happy you</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span>👨‍🍳</span>
+                <div>
+                    <h3>Expert Chefs</h3>
+                    <p>Flavour you will love</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span>💳</span>
+                <div>
+                    <h3>Easy Ordering</h3>
+                    <p>Simple and convenient</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section" id="menu">
+            <div class="section-heading">
+                <span class="eyebrow">OUR POPULAR PICKS</span>
+                <h2>Made to make you <span>crave.</span></h2>
+                <p>Handpicked favourites prepared fresh just for you.</p>
+            </div>
+
+            <div class="categories">
+                <a href="#burgers" class="category active">🍔 Burgers</a>
+                <a href="#pizza" class="category">🍕 Pizza</a>
+                <a href="#starters" class="category">🍟 Starters</a>
+                <a href="#desserts" class="category">🍰 Desserts</a>
+                <a href="#drinks" class="category">🥤 Drinks</a>
+            </div>
+
+            <div class="food-grid">
+
+                <!-- Burger -->
+                <article class="food-card" id="burgers">
+                    <div class="food-image">
+                        <span class="food-label">BESTSELLER</span>
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                             alt="Classic cheese burger" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-title">
+                            <h3>Classic Cheese Burger</h3>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <p>Juicy patty, melted cheese, lettuce and our signature sauce.</p>
+                        <div class="food-bottom">
+                            <strong class="price">₹199</strong>
+                            <a href="#contact" class="add-btn" aria-label="Order Classic Cheese Burger">+</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Pizza -->
+                <article class="food-card" id="pizza">
+                    <div class="food-image">
+                        <span class="food-label popular">POPULAR</span>
+                        <img src="https://images.unsplash.com/photo- pizza?auto=format&fit=crop&w=700&q=80"
+                             alt="Fresh pizza" loading="lazy"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80'">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-title">
+                            <h3>Italian Margherita</h3>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <p>Classic tomato sauce, mozzarella cheese and fresh basil.</p>
+                        <div class="food-bottom">
+                            <strong class="price">₹249</strong>
+                            <a href="#contact" class="add-btn" aria-label="Order Italian Margherita">+</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Chicken -->
+                <article class="food-card" id="starters">
+                    <div class="food-image">
+                        <span class="food-label spicy">CHEF'S PICK</span>
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=700&q=80"
+                             alt="Crispy fried chicken" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-title">
+                            <h3>Crispy Chicken Bites</h3>
+                            <span class="rating">★ 4.7</span>
+                        </div>
+                        <p>Crunchy golden bites served with a delicious dipping sauce.</p>
+                        <div class="food-bottom">
+                            <strong class="price">₹179</strong>
+                            <a href="#contact" class="add-btn" aria-label="Order Crispy Chicken Bites">+</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Pasta -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+                             alt="Creamy pasta with herbs" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-title">
+                            <h3>Creamy Alfredo Pasta</h3>
+                            <span class="rating">★ 4.8</span>
+                        </div>
+                        <p>Rich, creamy pasta tossed with herbs and parmesan.</p>
+                        <div class="food-bottom">
+                            <strong class="price">₹229</strong>
+                            <a href="#contact" class="add-btn" aria-label="Order Alfredo Pasta">+</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dessert -->
+                <article class="food-card" id="desserts">
+                    <div class="food-image">
+                        <span class="food-label popular">SWEET FAVOURITE</span>
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                             alt="Chocolate cake dessert" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-title">
+                            <h3>Chocolate Dream Cake</h3>
+                            <span class="rating">★ 4.9</span>
+                        </div>
+                        <p>Moist chocolate cake layered with silky chocolate cream.</p>
+                        <div class="food-bottom">
+                            <strong class="price">₹149</strong>
+                            <a href="#contact" class="add-btn" aria-label="Order Chocolate Cake">+</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Drink -->
+                <article class="food-card" id="drinks">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=700&q=80"
+                             alt="Refreshing fruit drink" loading="lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-title">
+                            <h3>Berry Blast Cooler</h3>
+                            <span class="rating">★ 4.6</span>
+                        </div>
+                        <p>A refreshing fruity drink to brighten your day.</p>
+                        <div class="food-bottom">
+                            <strong class="price">₹99</strong>
+                            <a href="#contact" class="add-btn" aria-label="Order Berry Blast Cooler">+</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="menu-footer">
+                <p>Craving something else? There's more to explore!</p>
+                <a href="#contact" class="btn btn-primary">Discover More ↗</a>
+            </div>
+        </section>
+
+        <!-- Special Offer -->
+        <section class="offer-section section" id="offers">
+            <div class="offer-content">
+                <span class="eyebrow">A LITTLE EXTRA HAPPINESS</span>
+                <h2>Good food is better<br>when it's a <span>great deal.</span></h2>
+                <p>Enjoy a delicious combo made for your cravings. Great taste,
+                   great value, and more reasons to smile.</p>
+                <a href="#menu" class="btn btn-light">Explore the Menu ↗</a>
+                <small>*Sample promotional offer for this student project.</small>
+            </div>
+            <div class="offer-visual">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
+                     alt="Delicious burger meal combo" loading="lazy">
+                <div class="offer-sticker">
+                    <span>COMBO</span>
+                    <strong>₹299</strong>
+                    <small>Burger + Fries + Drink</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews-section section" id="reviews">
+            <div class="section-heading">
+                <span class="eyebrow">LOVE FROM OUR CUSTOMERS</span>
+                <h2>Happiness served with <span>every order.</span></h2>
+                <p>Sample customer testimonials for the project demonstration.</p>
+            </div>
+
+            <div class="review-grid">
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The burger was delicious, the presentation was beautiful,
+                       and the whole experience felt premium!"</p>
+                    <div class="reviewer">
+                        <div class="avatar">A</div>
+                        <div>
+                            <h4>Ananya R.</h4>
+                            <small>Food lover</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card featured-review">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing flavours and a really attractive menu.
+                       The chocolate cake is definitely my favourite!"</p>
+                    <div class="reviewer">
+                        <div class="avatar">S</div>
+                        <div>
+                            <h4>Surya K.</h4>
+                            <small>Happy customer</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"So many delicious choices in one place.
+                       I love how easy it is to explore the menu."</p>
+                    <div class="reviewer">
+                        <div class="avatar">P</div>
+                        <div>
+                            <h4>Priya M.</h4>
+                            <small>Regular foodie</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact / Call to action -->
+        <section class="contact-section" id="contact">
+            <div>
+                <span class="eyebrow">YOUR NEXT FAVOURITE MEAL AWAITS</span>
+                <h2>Hungry already?</h2>
+                <p>Pick your favourites and get ready for a flavourful experience.</p>
+            </div>
+            <a href="#menu" class="btn btn-primary">Order Your Favourites ↗</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo">Crave<span>&Co.</span></a>
+                <p>Making everyday meals a little more special, one bite at a time.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#offers">Special Offers</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Customer Care</h4>
+                <a href="#reviews">Customer Reviews</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#home">Back to Top ↑</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Visit Us</h4>
+                <p>📍 Add your restaurant address</p>
+                <p>🕒 Open daily: 10 AM – 10 PM</p>
+                <p>📧 hello@craveandco.example</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Crave & Co. | Student Web Development Project</p>
+            <p>Made with ♥ and a little extra flavour.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
