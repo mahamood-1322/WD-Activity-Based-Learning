@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aurelia | Luxury Hotel & Resort</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="web4.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        <p>AN EXCEPTIONAL STAY. A BEAUTIFUL EXPERIENCE.</p>
+        <a href="#booking">PLAN YOUR ESCAPE ↗</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <span class="brand-icon">A</span>
+            <span class="brand-name">
+                <strong>AURELIA</strong>
+                <small>HOTEL & RESORT</small>
+            </span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#rooms">Our Rooms</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-button">BOOK YOUR STAY ↗</a>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO AURELIA</p>
+
+            <h1>Where Every Stay<br>
+                Becomes a <span>Story.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover thoughtful luxury, tranquil surroundings
+                and unforgettable moments. Your perfect getaway
+                begins here.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#rooms" class="btn btn-gold">
+                    DISCOVER OUR ROOMS ↗
+                </a>
+                <a href="#experience" class="btn btn-outline">
+                    EXPLORE THE EXPERIENCE
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <span class="hero-line"></span>
+                A PLACE TO PAUSE. A REASON TO RETURN.
+            </div>
+        </div>
+
+        <div class="hero-badge">
+            <span>YOUR PRIVATE</span>
+            <strong>Escape</strong>
+            <span>AWAITS YOU</span>
+        </div>
+    </section>
+
+    <!-- Booking Search Bar -->
+    <section class="booking-strip" id="booking">
+        <form class="booking-search" action="#reservation" method="get">
+
+            <div class="booking-field">
+                <label for="arrival">CHECK-IN</label>
+                <input type="date" id="arrival" name="checkin" required>
+            </div>
+
+            <div class="booking-field">
+                <label for="departure">CHECK-OUT</label>
+                <input type="date" id="departure" name="checkout" required>
+            </div>
+
+            <div class="booking-field">
+                <label for="guests">GUESTS</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                </select>
+            </div>
+
+            <div class="booking-field">
+                <label for="room-type">ROOM TYPE</label>
+                <select id="room-type" name="room_type" required>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="premium">Premium Suite</option>
+                    <option value="presidential">Presidential Suite</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-green search-btn">
+                CHECK AVAILABILITY ↗
+            </button>
+        </form>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro section-padding" id="experience">
+        <div class="intro-image">
+            <img
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1100&q=85"
+                alt="Beautiful luxury resort surrounded by greenery">
+
+            <div class="image-stamp">
+                <span>THE ART OF</span>
+                <strong>Slow Living</strong>
+            </div>
+        </div>
+
+        <div class="intro-content">
+            <p class="eyebrow">A WARMER KIND OF LUXURY</p>
+
+            <h2>Discover the<br>
+                <span>Art of Staying.</span>
+            </h2>
+
+            <p>
+                At Aurelia, hospitality is more than a service.
+                It is a feeling of comfort, a sense of belonging
+                and the freedom to enjoy every moment at your own pace.
+            </p>
+
+            <p>
+                From beautifully appointed rooms to thoughtful
+                amenities, every detail is designed to make your
+                stay feel special.
+            </p>
+
+            <div class="intro-points">
+                <div><span>✓</span> Thoughtfully designed spaces</div>
+                <div><span>✓</span> Personalised guest experience</div>
+                <div><span>✓</span> Memorable dining and relaxation</div>
+            </div>
+
+            <a href="#facilities" class="text-link">
+                EXPLORE OUR HOSPITALITY →
+            </a>
+        </div>
+    </section>
+
+    <!-- Rooms -->
+    <section class="rooms section-padding" id="rooms">
+        <div class="section-heading">
+            <p class="eyebrow">YOUR COMFORT, YOUR WAY</p>
+            <h2>Find Your Perfect <span>Room.</span></h2>
+            <p>
+                From intimate escapes to spacious suites,
+                discover a room that feels like it was made for you.
+            </p>
+        </div>
+
+        <div class="room-grid">
+
+            <!-- Room 1 -->
+            <article class="room-card">
+                <div class="room-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+                        alt="Elegant deluxe hotel bedroom">
+
+                    <span class="room-tag">GUEST FAVOURITE</span>
+                </div>
+
+                <div class="room-content">
+                    <div class="room-category">01 / CLASSIC COMFORT</div>
+                    <h3>Deluxe Room</h3>
+
+                    <p>
+                        A beautifully appointed retreat with
+                        soft linens, elegant interiors and
+                        all your everyday comforts.
+                    </p>
+
+                    <div class="room-features">
+                        <span>♧ 2 Guests</span>
+                        <span>▱ King Bed</span>
+                        <span>◈ Wi-Fi</span>
+                    </div>
+
+                    <div class="room-footer">
+                        <div class="room-price">
+                            <strong>₹3,499</strong>
+                            <span>/ night</span>
+                        </div>
+
+                        <a href="#reservation" class="room-link">
+                            RESERVE ↗
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Room 2 -->
+            <article class="room-card featured-room">
+                <div class="room-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85"
+                        alt="Premium hotel suite with refined interiors">
+
+                    <span class="room-tag">EXTRA COMFORT</span>
+                </div>
+
+                <div class="room-content">
+                    <div class="room-category">02 / ELEVATED LIVING</div>
+                    <h3>Premium Suite</h3>
+
+                    <p>
+                        Enjoy extra space, a relaxing sitting area
+                        and sophisticated details for a memorable stay.
+                    </p>
+
+                    <div class="room-features">
+                        <span>♧ 3 Guests</span>
+                        <span>▱ King Bed</span>
+                        <span>◈ Lounge</span>
+                    </div>
+
+                    <div class="room-footer">
+                        <div class="room-price">
+                            <strong>₹5,999</strong>
+                            <span>/ night</span>
+                        </div>
+
+                        <a href="#reservation" class="room-link">
+                            RESERVE ↗
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Room 3 -->
+            <article class="room-card">
+                <div class="room-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+                        alt="Spacious luxury suite with elegant furnishings">
+
+                    <span class="room-tag">EXCLUSIVE STAY</span>
+                </div>
+
+                <div class="room-content">
+                    <div class="room-category">03 / SIGNATURE LUXURY</div>
+                    <h3>Presidential Suite</h3>
+
+                    <p>
+                        An expansive private retreat featuring
+                        refined furnishings, generous living space
+                        and a luxurious atmosphere.
+                    </p>
+
+                    <div class="room-features">
+                        <span>♧ 4 Guests</span>
+                        <span>▱ King Bed</span>
+                        <span>◈ Living Area</span>
+                    </div>
+
+                    <div class="room-footer">
+                        <div class="room-price">
+                            <strong>₹9,499</strong>
+                            <span>/ night</span>
+                        </div>
+
+                        <a href="#reservation" class="room-link">
+                            RESERVE ↗
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="fine-print">
+            Sample room categories and illustrative prices for this student project.
+            Actual rates, occupancy and availability may vary.
+        </p>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities section-padding" id="facilities">
+        <div class="section-heading">
+            <p class="eyebrow">EVERY DETAIL MATTERS</p>
+            <h2>Little Luxuries. <span>Lasting Memories.</span></h2>
+            <p>
+                Enjoy the little things that turn a good stay
+                into a wonderful experience.
+            </p>
+        </div>
+
+        <div class="facility-grid">
+            <article class="facility-card">
+                <div class="facility-icon">🍽️</div>
+                <h3>Fine Dining</h3>
+                <p>Delight in thoughtfully prepared meals and inviting dining spaces.</p>
+            </article>
+
+            <article class="facility-card">
+                <div class="facility-icon">🏊</div>
+                <h3>Swimming Pool</h3>
+                <p>Unwind with a refreshing swim in a relaxing setting.</p>
+            </article>
+
+            <article class="facility-card">
+                <div class="facility-icon">🧖</div>
+                <h3>Spa & Wellness</h3>
+                <p>Take time for yourself with restorative wellness experiences.</p>
+            </article>
+
+            <article class="facility-card">
+                <div class="facility-icon">💪</div>
+                <h3>Fitness Centre</h3>
+                <p>Keep up with your fitness routine while travelling.</p>
+            </article>
+
+            <article class="facility-card">
+                <div class="facility-icon">📶</div>
+                <h3>Complimentary Wi-Fi</h3>
+                <p>Stay connected with convenient internet access.</p>
+            </article>
+
+            <article class="facility-card">
+                <div class="facility-icon">🚘</div>
+                <h3>Parking</h3>
+                <p>Convenient parking arrangements for visiting guests.</p>
+            </article>
+        </div>
+
+        <p class="fine-print">
+            Facilities shown are illustrative and should be confirmed for a real hotel.
+        </p>
+    </section>
+
+    <!-- Special Experience Banner -->
+    <section class="experience-banner">
+        <div class="experience-overlay"></div>
+
+        <div class="experience-content">
+            <p class="eyebrow">A MOMENT JUST FOR YOU</p>
+            <h2>Escape the Ordinary.<br>
+                <span>Embrace the Extraordinary.</span>
+            </h2>
+            <p>
+                Beautiful surroundings. Exceptional comfort.
+                Time to reconnect with what matters.
+            </p>
+
+            <a href="#reservation" class="btn btn-gold">
+                PLAN YOUR GETAWAY ↗
+            </a>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation section-padding" id="reservation">
+        <div class="reservation-intro">
+            <p class="eyebrow">YOUR STAY STARTS HERE</p>
+
+            <h2>Make Room for<br>
+                <span>Something Wonderful.</span>
+            </h2>
+
+            <p>
+                Share your travel details and preferred room.
+                Use the form below to demonstrate a hotel reservation
+                interface.
+            </p>
+
+            <div class="reservation-benefits">
+                <div>
+                    <span>01</span>
+                    <div>
+                        <strong>Choose your dates</strong>
+                        <p>Select your arrival and departure.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <div>
+                        <strong>Select your room</strong>
+                        <p>Choose the stay that suits you.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <div>
+                        <strong>Send your request</strong>
+                        <p>Complete your guest details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="reservation-form" action="#" method="get">
+            <h3>Reservation Request</h3>
+            <p class="form-subtitle">LET US HELP PLAN YOUR STAY</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guest-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="guest-name"
+                        name="name"
+                        placeholder="Your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guest-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="guest-email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="check-in">Check-in Date</label>
+                    <input type="date" id="check-in" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="check-out">Check-out Date</label>
+                    <input type="date" id="check-out" name="checkout" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="adult-count">Adults</label>
+                    <select id="adult-count" name="adults" required>
+                        <option value="1">1 Adult</option>
+                        <option value="2" selected>2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="child-count">Children</label>
+                    <select id="child-count" name="children">
+                        <option value="0" selected>0 Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="selected-room">Preferred Room</label>
+                <select id="selected-room" name="room" required>
+                    <option value="">Choose a room</option>
+                    <option value="deluxe">Deluxe Room — ₹3,499/night</option>
+                    <option value="premium">Premium Suite — ₹5,999/night</option>
+                    <option value="presidential">Presidential Suite — ₹9,499/night</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="special-request">Special Requests</label>
+                <textarea
+                    id="special-request"
+                    name="requests"
+                    rows="3"
+                    placeholder="Any preferences for your stay?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-green reservation-submit">
+                SUBMIT RESERVATION REQUEST ↗
+            </button>
+
+            <p class="form-note">
+                Student project demonstration. This form does not confirm a booking.
+            </p>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div>
+            <p class="eyebrow">WE WOULD LOVE TO WELCOME YOU</p>
+            <h2>Let's Make Your Stay <span>Special.</span></h2>
+            <p>
+                For this demo website, replace the sample contact
+                details with your chosen hotel's verified information.
+            </p>
+        </div>
+
+        <a href="#reservation" class="btn btn-gold">
+            CONTACT & RESERVE ↗
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="brand footer-brand">
+            <span class="brand-icon">A</span>
+            <span class="brand-name">
+                <strong>AURELIA</strong>
+                <small>HOTEL & RESORT</small>
+            </span>
+        </a>
+
+        <p class="footer-tagline">
+            A BEAUTIFUL PLACE TO STAY. A MEMORY WORTH KEEPING.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#booking">Check Availability</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 AURELIA HOTEL & RESORT | STUDENT WEB DEVELOPMENT PROJECT
+        </p>
+    </footer>
+
+</body>
+</html>
